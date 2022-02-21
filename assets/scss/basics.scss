@@ -9,6 +9,7 @@
       font-weight: bold;
       display: block;
       margin-left: -$header-name-font-size*0.07;
+      whitespace:nowrap;
     }
 
     .label {
@@ -17,6 +18,7 @@
       font-weight: lighter;
       display: block;
       margin-left: -$header-line-font-size*0.04;
+      whitespace:nowrap;
     }
   }
 

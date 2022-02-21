@@ -38,7 +38,7 @@ li {
   .main {
     display: table-cell;
     width: $content-main-percentage;
-    padding-right: $space-4;
+    padding-right: $space-3;
 
     .highlights {
       width: auto;
@@ -66,7 +66,7 @@ li {
   .side {
     display: table-cell;
     width: $content-side-percentage;
-    padding-left: $space-4;
+    padding-left: $space-3;
     text-align: right;
 
     p {

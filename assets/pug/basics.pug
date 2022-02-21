@@ -1,7 +1,7 @@
 div(class='basics')
     div(class='table')
         div(class='main')
-            span(class='name')=resume.basics.name
+            span(class='name')!=helper.mdToHtml(resume.basics.name)
             span(class='label')=resume.basics.label
         div(class='side')
             ul(class='contact')

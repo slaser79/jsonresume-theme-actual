@@ -7,12 +7,12 @@ if helper.validArray(resume.work)
                     div(class='header no-alone-1')
                         div(class='table')
                             div(class='left')
-                                span(class='position')=work.position
-                                span(class='company-location margin-text-1')
+                                span(class='company margin-text-1')
                                     a(href=work.url)=work.name
-                                    if work.name && work.location
-                                        | #{' · '}
-                                    | #{work.location}
+                                if work.name && work.location
+                                    |!{' · '} 
+                                    span(class='location')=work.location
+                                span(class='position')=work.position
                             div(class='right')
                                 span(class='dates')=helper.calcDateRange(work.startDate, work.endDate)
                     div(class='summary markdown')!=helper.mdToHtml(work.summary)

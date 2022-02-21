@@ -1,11 +1,13 @@
 const { src, dest, watch, series } = require('gulp')
 const pug = require('gulp-pug')
-const sass = require('gulp-sass')
+const sass = require('gulp-sass')(require('sass'));
 
 const bs = require('browser-sync').create()
 
 const fs = require('fs')
 const helper = require('./assets/helper.js')
+
+const yaml = require('yaml-js')
 
 function css () {
   return src('./assets/styles.scss')
@@ -14,7 +16,8 @@ function css () {
 }
 
 function html () {
-  const resume = JSON.parse(fs.readFileSync('./resume.json', 'utf-8'))
+  //const resume = JSON.parse(fs.readFileSync('./resume.json', 'utf-7'))
+  const resume = yaml.load(fs.readFileSync('./resume.yaml','utf-8'))
 
   return src('./assets/template.pug')
     .pipe(pug({ data: { resume, helper } }))
@@ -32,7 +35,7 @@ function serve () {
   })
 
   watch('./assets/**/*.scss', series(css, html))
-  watch(['./assets/**/*.pug', './resume.json'], html)
+  watch(['./assets/**/*.pug', './resume.json','./resume.yaml'], html)
   bs.watch('./public/*.html').on('change', bs.reload)
 }
 

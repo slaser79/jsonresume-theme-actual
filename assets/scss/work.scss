@@ -14,13 +14,25 @@
           display: block;
         }
 
-        .company-location {
+        .company {
           font-size: $work-company-location-font-size;
-          font-weight: lighter;
-          display: block;
+          font-weight: bold;
+          display: inline;
           a{
             text-decoration-color: lighten($text-color, 40%);
           }
+         }
+
+        .company-location {
+          font-size: $work-company-location-font-size;
+          font-weight: lighter;
+        }
+
+        .location {
+          font-size: $work-dates-font-size;
+          font-weight: lighter;
+          whitespace: nowrap;
+          display: inline;
         }
       }
 
@@ -31,6 +43,8 @@
         .dates {
           font-size: $work-dates-font-size;
           font-weight: lighter;
+          font-style : italic;
+          whitespace: nowrap;
         }
       }
     }
