@@ -26,7 +26,7 @@ li {
   height: auto;
   padding: 0 50px;
   margin: 0 auto;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: $text-color;
 }
 
@@ -44,21 +44,21 @@ li {
       width: auto;
       display: block;
       padding: 0 $space-1;
-      margin-top: $default-font-size/$line-height-2;
+      //margin-top: $default-font-size/$line-height-2;
       margin-bottom: 0;
-      columns: 2;
-      column-width: $main-highlights-column-width;
-      column-gap: $space-1;
+      //columns: 2;
+      //column-width: $main-highlights-column-width;
+      //column-gap: $space-1;
 
       li {
         font-size: $main-highlights-font-size;
-        list-style: none;
+        list-style-type: square;
         line-height: $line-height-1;
 
-        &:before {
-          content: "· ";
-          vertical-align: middle;
-        }
+        //&:before {
+          //content: "· ";
+          //vertical-align: middle;
+        //}
       }
     }
   }
@@ -79,4 +79,13 @@ li {
   font-size: $section-title-font-size;
   font-weight: normal;
   margin: 0 0 $space-2 0;
+}
+
+.highlight-header {
+  margin-top: $default-font-size / 2;
+  margin-bottom: $default-font-size / 2;
+  font-size: $work-highlights-font-size;
+  font-weight: normal;
+  text-decoration: underline;
+  display: block;
 }

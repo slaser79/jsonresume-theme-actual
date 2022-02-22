@@ -17,6 +17,7 @@ if helper.validArray(resume.work)
                                 span(class='dates')=helper.calcDateRange(work.startDate, work.endDate)
                     div(class='summary markdown')!=helper.mdToHtml(work.summary)
                     if helper.validArray(work.highlights)
+                      p(class='highlight-header') Key Achievements 
                         ul(class='highlights no-break')
                             each highlight in work.highlights
                                 li=highlight

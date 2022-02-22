@@ -9,4 +9,5 @@ div(class='basics')
                 li=resume.basics.email
                 li(class='margin-text-3')=helper.calcLocation(resume.basics.location)
     if resume.basics.summary
+        p(class='section-title no-alone-2') About
         div(class='summary markdown')!=helper.mdToHtml(resume.basics.summary)
