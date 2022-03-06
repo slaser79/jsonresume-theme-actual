@@ -1,5 +1,5 @@
 $content-width: 1000px;
-$content-main-percentage: 70%;
+$content-main-percentage: 75%;
 $content-side-percentage: 100% - $content-main-percentage;
 
 $space-1: 10px;
@@ -11,41 +11,41 @@ $line-height-1: 1.2;
 $line-height-2: 1.3;
 
 $text-color: #222222;
-$section-title-font-size: 26px;
-$default-font-size: 16px;
+$default-font-size: 1rem;
+$section-title-font-size: $default-font-size * 1.625;
 
-$header-name-font-size: 40px;
-$header-line-font-size: 30px;
-$header-contact-font-size: 18px;
+$header-name-font-size: $default-font-size  * 2.5 ;
+$header-line-font-size: $default-font-size * 1.875;
+$header-contact-font-size: $default-font-size * 1.125;
 
-$main-highlights-font-size: 14px;
-$main-highlights-column-width: ($content-width * ($content-main-percentage / 100%) - 3 * $space-1 - $space-4) / 2;
+$main-highlights-font-size: $default-font-size * 0.875;
+$main-highlights-column-width: calc(($content-width * ($content-main-percentage / 100%) - 3 * $space-1 - $space-4) / 2);
 
-$work-position-font-size: 15px;
-$work-dates-font-size: 15px;
-$work-highlights-font-size: 15px;
-$work-company-location-font-size: 18px;
+$work-position-font-size: $default-font-size * 0.9375;
+$work-dates-font-size: $default-font-size * 0.9375;
+$work-highlights-font-size: $default-font-size * 0.9375;
+$work-company-location-font-size: $default-font-size * 1.125;
 
-$project-name-font-size: 18px;
-$project-roles-font-size: 16px;
+$project-name-font-size: $default-font-size * 1.125;
+$project-roles-font-size: $default-font-size;
 
-$skills-groups-font-size: 12px;
-$skills-keywords-font-size: 10px;
-$skills-column-width: ($content-width * ($content-side-percentage / 100%) - $space-1 -$space-4) / 2;
+$skills-groups-font-size: $default-font-size * 0.75;
+$skills-keywords-font-size: $default-font-size * 0.625;
+$skills-column-width: calc(($content-width * ($content-side-percentage / 100%) - $space-1 - $space-4) / 2);
 
-$education-area-font-size: 13px;
-$education-institution-font-size: 13px;
+$education-area-font-size: $default-font-size * 0.8125;
+$education-institution-font-size: $default-font-size * 0.8125;
 
-$certificates-name-font-size: 12px;
-$certificates-issuer-font-size: 12px;
+$certificates-name-font-size: $default-font-size * 0.75;
+$certificates-issuer-font-size: $default-font-size * 0.75;
 
-$awards-title-font-size: 16px;
-$awards-awarder-font-size: 15px;
-$awards-summary-font-size: 14px;
+$awards-title-font-size: $default-font-size; 
+$awards-awarder-font-size: $default-font-size * 0.9375;
+$awards-summary-font-size: $default-font-size * 0.875;
 
-$languages-font-size: 14px;
+$languages-font-size: $default-font-size * 0.875;
 
-$interests-font-size: 14px;
+$interests-font-size: $default-font-size * 0.875;
 
-$links-font-size: 14px;
+$links-font-size: $default-font-size * 0.875;
 

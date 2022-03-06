@@ -55,7 +55,8 @@
   .summary {
     font-size: $default-font-size;
     padding: 0;
-    margin-top: $default-font-size/$line-height-2;
+    text-align: justify;
+    margin-top: calc($default-font-size / $line-height-2);
 
     &:empty {
       display: none
